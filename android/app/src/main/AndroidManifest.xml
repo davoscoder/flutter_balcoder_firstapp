@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_balcoder_firstapp">
+    package="com.balcoder.firstapp">
    <application
         android:label="flutter_balcoder_firstapp"
         android:name="${applicationName}"

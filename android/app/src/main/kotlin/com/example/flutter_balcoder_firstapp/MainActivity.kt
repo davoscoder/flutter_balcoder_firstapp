@@ -1,4 +1,4 @@
-package com.example.flutter_balcoder_firstapp
+package com.balcoder.firstapp
 
 import io.flutter.embedding.android.FlutterActivity
 

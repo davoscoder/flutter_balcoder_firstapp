@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "236460417252",
+    "project_id": "balcoderfirebase",
+    "storage_bucket": "balcoderfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236460417252:android:ec099555d7ef57a74a0cf1",
+        "android_client_info": {
+          "package_name": "com.balcoder.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236460417252-a3ef6j5vg5jr1dpb252tg8g29okg5fo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_AZgtASOQzOtKMdbeSvzN3mwDZGQ73Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236460417252-a3ef6j5vg5jr1dpb252tg8g29okg5fo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

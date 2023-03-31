@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -9,6 +10,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int count = 0;
+  String name = '';
+
+  @override
+  void initState() {
+    super.initState();
+
+    getData();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +30,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               Spacer(),
-              Text('Texto 1'),
-              Text('Texto 2'),
-              Text(count.toString()),
+              Text(name),
               Spacer(),
             ],
           ),
@@ -42,5 +49,19 @@ class _HomePageState extends State<HomePage> {
         child: Icon(Icons.add),
       ),
     );
+  }
+
+  getData() {
+    FirebaseFirestore.instance
+        .collection('dataCollection')
+        .doc('CUyysBpV2W2l3JXfZWQJ')
+        .snapshots()
+        .listen((value) {
+      setState(() {
+        var data = value.data();
+        print(data?['name']);
+        name = data?['name'];
+      });
+    });
   }
 }
